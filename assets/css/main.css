@@ -664,12 +664,46 @@ div#formBox {
 
 
 
+	div#invitacion {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 22px;
+		grid-auto-rows: minmax(auto, auto);
+		position: relative;
+		padding: 32px;
+		color: white;
+		background-color: #00000058;
+		border-radius: 24px;
+		align-items: center;
+		margin: 36px 0px;
+	}
+		div#invitacion > h1 {
+			border-right: 1px solid;
+			height: 100%;
+			display: flex;
+			align-items: center;
+		}
+		div#invitacion > p {
+			font-size: 120%;
+			margin-bottom: 0px;
+		}
+		div#invitacion > p:last-child{
+			grid-column: 1/4;
+			padding: 16px 0px 31px;
+			margin-top: 16px;
+			text-align: center;
+			border-top: 1px solid goldenrod;
+			border-style: dashed;
+		}
 
 
 
-
-
-
+span.resaltar {
+	display: block;
+	font-size: 140%;
+	margin-top: 12px;
+	color: goldenrod;
+}
 
 
 
@@ -730,6 +764,19 @@ div#formBox {
 		h1 {
 			font-size: 1.8em;
 			margin: 0.67em 0;
+		}
+
+	div#invitacion {
+		display: block;
+		border-radius: 0px;
+	}
+		div#invitacion > h1 {
+			justify-content: center;
+			border-right: 0px;
+			border-bottom: 1px solid white;
+		}
+		div#invitacion > p {
+			margin-bottom: 1.4em;
 		}
 	
 }
